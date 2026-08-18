@@ -1,0 +1,12 @@
+{
+  "name": "llm-cost-benchmark-runner",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "Live runner for Harpd LLM cost benchmarks",
+  "scripts": {
+    "start": "node index.mjs",
+    "analyze": "node ../scripts/analyze.mjs"
+  },
+  "dependencies": {}
+}

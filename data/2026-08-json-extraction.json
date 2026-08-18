@@ -1,0 +1,92 @@
+{
+  "benchmark": "json-extraction-v1",
+  "title": "JSON extraction — Claude vs GPT vs Gemini vs DeepSeek",
+  "task": "Structured JSON extraction from messy natural-language input (en + ja + zh)",
+  "taskCount": 100,
+  "generatedAt": "2026-08-18T02:33:58.678Z",
+  "isModeled": true,
+  "methodologyNote": "MODELED ESTIMATE. Prices are public 2026 list prices; success/latency are assumed from published 2025–2026 behavior. Replace with live runs via the open-source runner (node runner/index.mjs) before citing.",
+  "pricingSource": "src/lib/llm-pricing.ts (public 2026 list prices)",
+  "results": [
+    {
+      "model": "gpt-4o-mini",
+      "successRate": 0.88,
+      "p50LatencyMs": 400,
+      "p95LatencyMs": 900,
+      "avgInputTokens": 4000,
+      "avgOutputTokens": 600,
+      "costPerTask": 0.00096,
+      "costPerSuccessfulTask": 0.001091
+    },
+    {
+      "model": "deepseek-v3",
+      "successRate": 0.91,
+      "p50LatencyMs": 900,
+      "p95LatencyMs": 2100,
+      "avgInputTokens": 4000,
+      "avgOutputTokens": 600,
+      "costPerTask": 0.00174,
+      "costPerSuccessfulTask": 0.001912
+    },
+    {
+      "model": "gemini-2.5-flash",
+      "successRate": 0.9,
+      "p50LatencyMs": 350,
+      "p95LatencyMs": 800,
+      "avgInputTokens": 4000,
+      "avgOutputTokens": 600,
+      "costPerTask": 0.0027,
+      "costPerSuccessfulTask": 0.003
+    },
+    {
+      "model": "llama-3.1-70b",
+      "successRate": 0.84,
+      "p50LatencyMs": 700,
+      "p95LatencyMs": 1700,
+      "avgInputTokens": 4000,
+      "avgOutputTokens": 600,
+      "costPerTask": 0.004048,
+      "costPerSuccessfulTask": 0.004819
+    },
+    {
+      "model": "claude-haiku-4",
+      "successRate": 0.93,
+      "p50LatencyMs": 600,
+      "p95LatencyMs": 1400,
+      "avgInputTokens": 4000,
+      "avgOutputTokens": 600,
+      "costPerTask": 0.0056,
+      "costPerSuccessfulTask": 0.006022
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "successRate": 0.95,
+      "p50LatencyMs": 1400,
+      "p95LatencyMs": 3000,
+      "avgInputTokens": 4000,
+      "avgOutputTokens": 600,
+      "costPerTask": 0.011,
+      "costPerSuccessfulTask": 0.011579
+    },
+    {
+      "model": "gpt-4.1",
+      "successRate": 0.96,
+      "p50LatencyMs": 1500,
+      "p95LatencyMs": 3200,
+      "avgInputTokens": 4000,
+      "avgOutputTokens": 600,
+      "costPerTask": 0.0128,
+      "costPerSuccessfulTask": 0.013333
+    },
+    {
+      "model": "claude-sonnet-4",
+      "successRate": 0.97,
+      "p50LatencyMs": 1200,
+      "p95LatencyMs": 2600,
+      "avgInputTokens": 4000,
+      "avgOutputTokens": 600,
+      "costPerTask": 0.021,
+      "costPerSuccessfulTask": 0.021649
+    }
+  ]
+}
