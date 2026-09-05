@@ -26,6 +26,29 @@ node runner/index.mjs
 
 The runner writes fresh `data/*.json` and `data/*.csv`. Everything is reproducible on a clean machine.
 
+## Repository layout
+
+```
+data/          benchmark results (JSON + CSV, one file per run)
+pricing/       list-price snapshot the benchmark cost math used
+runner/        open-source benchmark runner (live runs overwrite data/)
+scripts/       analysis helpers
+DATA_DICTIONARY.md   field-level definitions for every dataset
+METHODOLOGY.md       collection, validation, execution, scoring, limitations, update frequency, reproduction
+```
+
+## Website ↔ data
+
+This repository and harpd.com mirror each other:
+
+- **Harpd Research** (human-readable hub): <https://harpd.com/research/>
+- **Methodology** (the four documented methods): <https://harpd.com/methodology/> · benchmark method: <https://harpd.com/methodology/benchmarks/>
+- **Benchmark page** (status + modeled-preview table): <https://harpd.com/benchmarks/>
+- **Live datasets**: benchmark — <https://harpd.com/data/benchmarks.json> / [.csv](https://harpd.com/data/benchmarks.csv) · pricing — <https://harpd.com/data/llm-pricing.json> / [.csv](https://harpd.com/data/llm-pricing.csv) · all endpoints — <https://harpd.com/data/>
+- **Evidence register** (claim → data → method → updated): <https://harpd.com/evidence/>
+
+The GitHub repo is the source of truth for raw benchmark artifacts and the runner; harpd.com serves the live machine-readable exports and the human-readable summaries. Every last-updated date on the site comes from the data itself (`generatedAt` / `verified_at`), never from a build.
+
 ## Why we publish the data
 
 The cheapest model that *succeeds on your real tasks* is the only model that matters. Publishing raw CSV/JSON is the only way the community can verify that claim — and the only way [Harpd ModelSwitch](https://harpd.com/modelswitch) can earn the authority it needs.

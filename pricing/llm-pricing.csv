@@ -1,0 +1,17 @@
+id,name,provider,model,input_per_million,cached_input_per_million,output_per_million,batch_discount,context_window,status,effective_at,verified_at,last_updated,source,note
+claude-opus-4-8,Claude Opus 4.8,Anthropic,Claude Opus 4.8,5,0.5,25,0.5,200000,available,2026-06-01,2026-08-18,2026-08-18,https://docs.anthropic.com/en/docs/about-claude/pricing,
+claude-sonnet-5,Claude Sonnet 5,Anthropic,Claude Sonnet 5,2,0.2,10,0.5,200000,available,2026-08-01,2026-08-18,2026-08-18,https://docs.anthropic.com/en/docs/about-claude/pricing,Introductory pricing ($2/$10) runs through 2026-08-31; standard $3/$15 applies from 2026-09-01.
+claude-sonnet-4-5,Claude Sonnet 4.5,Anthropic,Claude Sonnet 4.5,3,0.3,15,0.5,200000,available,2026-03-01,2026-08-18,2026-08-18,https://docs.anthropic.com/en/docs/about-claude/pricing,
+claude-haiku-4-5,Claude Haiku 4.5,Anthropic,Claude Haiku 4.5,1,0.1,5,0.5,200000,available,2026-03-01,2026-08-18,2026-08-18,https://docs.anthropic.com/en/docs/about-claude/pricing,
+gpt-5,GPT-5,OpenAI,GPT-5,1.25,0.125,10,0.5,400000,available,2026-06-01,2026-08-18,2026-08-18,https://openai.com/api/pricing/,
+gpt-5-mini,GPT-5 mini,OpenAI,GPT-5 mini,0.25,0.025,2,0.5,400000,available,2026-06-01,2026-08-18,2026-08-18,https://openai.com/api/pricing/,
+gpt-5-nano,GPT-5 nano,OpenAI,GPT-5 nano,0.05,0.005,0.4,0.5,400000,available,2026-06-01,2026-08-18,2026-08-18,https://openai.com/api/pricing/,
+gpt-4-1,GPT-4.1,OpenAI,GPT-4.1,2,0.2,8,0.5,1000000,available,2025-04-14,2026-08-18,2026-08-18,https://openai.com/api/pricing/,
+gemini-2-5-pro,Gemini 2.5 Pro,Google,Gemini 2.5 Pro,1.25,0.125,10,0.5,1000000,available,2025-03-25,2026-08-18,2026-08-18,https://ai.google.dev/gemini-api/docs/pricing,Prompts over 200k tokens bill at $2.50 input / $15 output. Context caching ~$0.125/1M for ≤200k.
+gemini-2-5-flash,Gemini 2.5 Flash,Google,Gemini 2.5 Flash,0.3,0.075,2.5,0.5,1000000,available,2025-03-25,2026-08-18,2026-08-18,https://ai.google.dev/gemini-api/docs/pricing,
+gemini-2-5-flash-lite,Gemini 2.5 Flash-Lite,Google,Gemini 2.5 Flash-Lite,0.1,,0.4,0.5,1000000,available,2025-03-25,2026-08-18,2026-08-18,https://ai.google.dev/gemini-api/docs/pricing,
+mistral-large-3,Mistral Large 3,Mistral,Mistral Large 3,2,,6,0.5,128000,available,2026-01-01,2026-08-18,2026-08-18,https://docs.mistral.ai/cloud/cloud-pricing/,
+mistral-small-3-1,Mistral Small 3.1,Mistral,Mistral Small 3.1,0.1,,0.3,0.5,128000,available,2026-01-01,2026-08-18,2026-08-18,https://docs.mistral.ai/cloud/cloud-pricing/,
+deepseek-v3,DeepSeek V3,DeepSeek,DeepSeek V3,0.27,,1.1,,128000,available,2025-12-26,2026-08-18,2026-08-18,https://api-docs.deepseek.com/quick_start/,DeepSeek moved to peak/off-peak pricing on 2026-08-17. Figures shown are approximate off-peak list rates — verify before budgeting.
+llama-3-1-70b,Llama 3.1 70B,Meta · Together,Llama 3.1 70B,0.88,,0.88,,128000,available,2024-07-23,2026-08-18,2026-08-18,https://www.together.ai/pricing,Resale price via Together AI.
+qwen-2-5-72b,Qwen 2.5 72B,Alibaba · OpenRouter,Qwen 2.5 72B,0.4,,0.4,,128000,available,2024-09-19,2026-08-18,2026-08-18,https://openrouter.ai/models,Resale price via OpenRouter.
